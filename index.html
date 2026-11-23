@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Sahil Studio — wedding photography, cinematic films and premium albums in Harnaut, Bihar.">
+<title>Sahil Studio | Photography & Cinematic Films</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+<header class="site-header">
+  <a class="brand" href="#home"><span class="brand-mark">SS</span><span><b>SAHIL STUDIO</b><small>PHOTOGRAPHY · FILMS · ALBUMS</small></span></a>
+  <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation">☰</button>
+  <nav id="mainNav"><a href="#home">Home</a><a href="#services">Services</a><a href="#packages">Packages</a><a href="#albums">Albums</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a><a class="nav-admin" href="#admin">Admin</a></nav>
+</header>
+<main>
+<section class="hero" id="home"><div class="hero-shade"></div><div class="container hero-inner"><p class="eyebrow">DIHRIGARH · HARNAUT · BIHAR</p><h1>Every moment.<br><em>Forever remembered.</em></h1><p class="hero-copy">Honest emotions, beautiful details and cinematic stories — captured with care by Sahil Studio.</p><div class="hero-actions"><a class="button button-gold" href="#packages">Explore packages</a><a class="button button-outline" href="#gallery">View our work</a></div></div><div class="hero-note">YOUR STORY, BEAUTIFULLY TOLD</div></section>
+<section class="intro section-pad"><div class="container intro-grid"><div><p class="eyebrow">WELCOME TO SAHIL STUDIO</p><h2>More than pictures.<br><em>Memories that last.</em></h2></div><p class="muted">From the first celebration to the final frame, we capture the people, feelings and little details that make every occasion yours. Explore our services, packages and album collections.</p></div></section>
+<section class="section-pad section-light" id="services"><div class="container"><div class="section-heading"><p class="eyebrow">WHAT WE DO</p><h2>Our services</h2><p>Photography and films for the moments that matter.</p></div><div class="cards-grid" id="servicesGrid"><p class="muted">Loading services…</p></div></div></section>
+<section class="section-pad" id="packages"><div class="container"><div class="section-heading"><p class="eyebrow">THE RIGHT EXPERIENCE</p><h2>Our packages</h2><p>Clear package details and pricing. Contact us to check availability for your date.</p></div><div class="cards-grid" id="packagesGrid"><p class="muted">Loading packages…</p></div></div></section>
+<section class="section-pad section-light" id="albums"><div class="container"><div class="section-heading"><p class="eyebrow">MADE TO BE HELD</p><h2>Album collection</h2><p>Choose a format and finish to preserve your favourite memories.</p></div><div class="cards-grid" id="albumsGrid"><p class="muted">Loading albums…</p></div></div></section>
+<section class="section-pad" id="gallery"><div class="container"><div class="section-heading"><p class="eyebrow">A FEW FAVOURITE FRAMES</p><h2>Selected moments</h2><p>A glimpse into the stories we have the privilege to capture.</p></div><div class="gallery-grid" id="galleryGrid"><p class="muted">Gallery images will appear here.</p></div></div></section>
+<section class="contact-section section-pad section-light" id="contact"><div class="container contact-grid"><div><p class="eyebrow">LET'S TALK</p><h2>Tell us about<br><em>your celebration.</em></h2><p class="muted">Share your event details and we'll get back to you. You can also contact us directly.</p><div class="contact-lines"><p><b>Call / WhatsApp</b><a id="phoneLink" href="tel:+918292648897">+91 82926 48897</a></p><p><b>Studio address</b><span id="studioAddress">Dihrigarh, Harnaut, Bihar</span></p><p><b>Instagram</b><a id="instagramLink" href="#" target="_blank" rel="noopener">@yourstudio</a></p></div><a class="button button-dark" id="whatsappLink" href="https://wa.me/918292648897" target="_blank" rel="noopener">Chat on WhatsApp ↗</a></div>
+<form id="enquiryForm" class="enquiry-form"><h3>Send an enquiry</h3><label>Your name<input name="name" required maxlength="100" placeholder="Full name"></label><label>Phone number<input name="phone" required maxlength="20" placeholder="Your contact number"></label><label>Event type<select name="event_type"><option value="">Select event</option><option>Wedding</option><option>Pre-wedding</option><option>Engagement</option><option>Birthday</option><option>Other event</option></select></label><label>Event date<input name="event_date" type="date"></label><label>Message<textarea name="message" rows="4" maxlength="1500" placeholder="Tell us what you are looking for"></textarea></label><button class="button button-gold" type="submit">Submit enquiry</button><p class="form-message" id="formMessage" aria-live="polite"></p></form></div></section>
+</main>
+<footer><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">SS</span><span><b>SAHIL STUDIO</b><small>PHOTOGRAPHY · FILMS · ALBUMS</small></span></a><span>© <span id="year"></span> Sahil Studio. All rights reserved.</span><a href="#admin">Admin login</a></div></footer>
+</div>
+<section id="adminApp" class="admin-shell" hidden></section>
+<div id="toast" class="toast" role="status"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script><script src="app.js"></script>
+</body></html>
